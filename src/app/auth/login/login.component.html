@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Library Management System</h2>
+  <p>Please sign in to your account</p>
+
+  <label>User ID</label>
+  <input [(ngModel)]="userId" placeholder="Enter your user id" />
+
+  <label>Password</label>
+  <input type="password" [(ngModel)]="password" placeholder="Enter your password" />
+
+  <button (click)="login()">Sign In</button>
+  <a (click)="goToReset()">Forgot your password?</a>
+</div>

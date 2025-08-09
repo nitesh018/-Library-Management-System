@@ -1,0 +1,39 @@
+<div class="page">
+  <app-navbar></app-navbar>
+  <app-sidebar></app-sidebar>
+  
+  <div class="content">
+    <h1>👤 Admin Profile</h1>
+    
+    <div class="form-box">
+      <form (ngSubmit)="updateProfile()">
+        
+        <div class="field">
+          <label>Name</label>
+          <input type="text" [(ngModel)]="name" name="name" required>
+        </div>
+        
+        <div class="field">
+          <label>Email</label>
+          <input type="email" [(ngModel)]="email" name="email" required>
+        </div>
+        
+        <div class="field">
+          <label>Current Password</label>
+          <input type="password" [(ngModel)]="currentPassword" name="currentPassword">
+        </div>
+        
+        <div class="field">
+          <label>New Password</label>
+          <input type="password" [(ngModel)]="newPassword" name="newPassword">
+        </div>
+        
+        <button type="submit" class="update-btn">
+          Update Profile
+        </button>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
